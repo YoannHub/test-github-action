@@ -8,8 +8,8 @@ on:
   pull_request:
     branches: 
       - main
-  schedule:
-    - cron: '15 6 * * SUN'
+#  schedule:
+#    - cron: '15 6 * * SUN'
   workflow_dispatch:
   
 # Just a comment to try
