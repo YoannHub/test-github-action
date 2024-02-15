@@ -25,6 +25,7 @@ jobs:
        - run: |
           echo "The repository ${{ github.repository }} contains the following files:"
           tree
+           echo "::notice file={hol/02-My-first-action.md},line={6},endLine={8},title={Issue}::{The markdown looks weird here}"
          
       
       
