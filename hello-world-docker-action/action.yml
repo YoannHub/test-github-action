@@ -2,7 +2,7 @@ name: Hello, World!
 description: Greet someone and record the time
 author: GitHub Actions
 
-# Define your inputs here.
+# Define your inputs here. test
 inputs:
   who-to-greet:
     description: Who to greet
