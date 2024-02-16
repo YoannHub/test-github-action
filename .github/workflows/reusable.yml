@@ -3,15 +3,14 @@ on:
   workflow_call:
     inputs:
       who-to-greet:
-        description: Person to greet
-        required: true
+        description: 'Person to greet'
         type: string
+        required: true
         default: World
     outputs:
         current-time: ${{ jobs.reusable-job.outputs.current-time }}
 jobs:
   reusable-job:
-    name: Reusable job
     runs-on: ubuntu-latest
     outputs:
       current-time: ${{ steps.time.outputs.time }}
