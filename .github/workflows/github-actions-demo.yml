@@ -1,16 +1,21 @@
 name: GitHub Actions Demo
 on:
-  push:
-    branches: 
-      - main
-    paths-ignore: 
-      - .github
-  pull_request:
-    branches: 
-      - main
+#  push:
+#    branches: 
+#      - main
+#    paths-ignore: 
+#      - .github
+#  pull_request:
+#    branches: 
+#      - main
 #  schedule:
 #    - cron: '15 6 * * SUN'
   workflow_dispatch:
+    inputs:
+      environment:
+        type: environment
+        required: true
+        description: 'environment on which to display'
   
 # Just a comment to try
 jobs:
