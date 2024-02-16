@@ -11,5 +11,5 @@ jobs:
     needs: [call-workflow]
     steps:
       - run: |
-          echo "${{ needs.call-workflow.outputs.time }}"
+          echo "${{ needs.call-workflow.outputs.current-time }}"
     
