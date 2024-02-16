@@ -52,6 +52,9 @@ jobs:
     name: Deploy prod
     if: github.event.inputs.environment == 'Production'
     runs-on: ubuntu-latest
+    environment:
+      name: Production
+      url: http://perdu.com
     needs: 
       - Test
       - Load-Test
